@@ -329,6 +329,16 @@ body {
 .container-footer > address {
    font-style: normal;
 }
+
+.container-footer .contact-item {
+   display: inline-block;
+   margin: 9px 0px;
+}
+
+.container-footer .logo {
+   margin-bottom: 20px;
+}
+
 .alt {
    color: var(--alternative-color-text);
    
