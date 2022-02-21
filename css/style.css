@@ -31,7 +31,10 @@ body {
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.03em;
+   margin: 0;
+   position: relative;
 }
+
 /* шапка сайта */
 .container-header,
 .container-hero,
@@ -45,10 +48,25 @@ body {
    max-width: 1170px;
    margin:0 auto;
 }
-.container-header{
-   
+.page-head {
+   min-width: none;
    height: 80px;
+   background-color:var(--alternative-color-text);
    border-bottom: 1px solid #ECECEC;
+   position: fixed;
+   z-index: 3;
+   display: flex;
+   width: 1688px;
+   height: 80px;
+   left: 0px;
+   top: 0px;
+}
+.container-header{
+
+   align-items: center;
+   width: 1170px;
+   margin:0 auto;
+
 }
 /* логотип */
 .logo {
@@ -75,7 +93,7 @@ body {
 /* site-nav */
 .site-nav {
    display: flex;
-   flex:1 1 auto;
+   flex: 1 1 auto;
 }
 
 .site-nav .list {
@@ -143,19 +161,34 @@ body {
    background-color: var(--seconadary-bg-color);
 }
 
+/* стили для мейн части страницы */
+.page{
 
+}
 /* герои  */
 .hero {
-   background: url(/images/hero.jpg) rgba(47, 48, 58, 0.4);
-   
+   margin-top: 80px;
+   background: rgba(47, 48, 58, 0.4);
+   position: relative;
 }
+.hero-container::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   min-width: 100%;
+   background: url(/images/hero.jpg);
+   z-index: -1;
+}
+
+
 .container-hero {
    flex-direction: column;
    justify-content: center;
    align-items: center;
    width: auto;
    height: 600px;
-   flex-wrap: wrap;
 }
 
 .hero-title {
@@ -301,6 +334,7 @@ body {
 /* кнопка */
 
 .button {
+   
    font-family:inherit;
    font-weight: 700;
    font-size: 16px;
@@ -309,16 +343,25 @@ body {
    color: var(--alternative-color-text);
    background: var(--accent-color);
    border-radius: 4px;
+   box-shadow: none;
+   padding: 10px 32px;
+   transition: all 0.5s ease 0.5s;
 }
 
 .button:hover, 
 .button:focus {
-   color: var(--accent-color);
-   background-color: var(--alternative-color-text);
+   background: #188CE8;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* ========================================================================================================================== */
 /* портофолио */
+.container-portfolio {
+   margin-top: 179px;
+}
+.container-portfolio h1 {
+   display: none;
+}
+
 .btm-list{
    display: flex;
    justify-content: center;
@@ -409,6 +452,7 @@ body {
    color: var(--secondary-color);
    background-color: var(--primary-bg-color);
    border-radius: 4px;
+   padding: 6px 22px;
 }
 
 .btm:hover, 
