@@ -1,0 +1,48 @@
+.main{
+
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: #fff;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+.head-content{
+  background-color: grey;
+}
+.header-title{
+  background-color: blue;
+}
+.header-title-text{
+  font-size: bold;
+  text-align: center;
+}
+.nav{
+  background-color: green;
+}
+body{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+.nav-button{
+border: 4px solid #fff;
+background-color: black;
+color: #fff;
+size: 200px;
+
+}
+.nav-button-text{
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.select-language{
+  background-color: red;
+  padding-left: 200px;
+}
+.footer-container{
+  background-color: black;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: #fff;
+  margin: 0 20px;
+}
