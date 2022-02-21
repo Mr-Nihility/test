@@ -45,11 +45,11 @@ body {
 .container-portfolio {
    display: flex;
    align-items: center;
-   max-width: 1170px;
+   width: 1170px;
    margin:0 auto;
 }
+
 .page-head {
-   min-width: none;
    height: 80px;
    background-color:var(--alternative-color-text);
    border-bottom: 1px solid #ECECEC;
@@ -163,12 +163,13 @@ body {
 
 /* стили для мейн части страницы */
 .page{
+   width: 100%;
 
 }
 /* герои  */
 .hero {
    margin-top: 80px;
-   width: 100%;
+   min-width: 100%;
    height: 600px;
 }
 /* .hero-container::before {
