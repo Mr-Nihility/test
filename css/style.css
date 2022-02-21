@@ -189,7 +189,7 @@ body {
    align-items: center;
    height: 600px;
    min-width: 100%;
-   background: url(/images/hero.jpg);
+   background: url(../images/hero.jpg);
 }
 
 .hero-title {
